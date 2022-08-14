@@ -7,6 +7,7 @@ import { TableStyle } from "../table/StyledTable";
 interface ColumnType {
   Header: string;
   accessor?: string;
+  Cell?: any;
   width?: number;
   columns?: ColumnType[];
 }

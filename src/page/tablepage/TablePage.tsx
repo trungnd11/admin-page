@@ -17,7 +17,7 @@ export default function TablePage() {
           {
             Header: "Last Name",
             accessor: "lastName",
-            width: 300
+            width: 300,
           },
         ],
       },
@@ -39,6 +39,22 @@ export default function TablePage() {
           {
             Header: "Profile Progress",
             accessor: "progress",
+          },
+        ],
+      },
+      {
+        Header: "Actions",
+        columns: [
+          {
+            Header: "Detail",
+            accessor: "detail",
+            Cell: (cell: { row: any }) => (
+              <i
+                className="fa-solid fa-circle-info text-primary"
+                style={{ fontSize: "1.5rem", cursor: "pointer" }}
+                onClick={() => Alert("info", JSON.stringify(cell.row.original))}
+              />
+            ),
           },
         ],
       },
