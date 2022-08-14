@@ -1,6 +1,8 @@
 import logo from "../static/images/logos/vetc.png";
 import { fadeInDown } from "react-animations";
 import styled, { keyframes } from "styled-components";
+import useFetch from "../components/customHook/useFetch";
+import { getServiceType } from "../api/serviceApi";
 
 const zoomInAnimation = keyframes`
   5%,
@@ -48,6 +50,11 @@ export default function Home() {
     fontFamily: "Great Vibes,cursive",
     color: "#41af5f",
   };
+
+  const { loading, data } = useFetch(getServiceType);
+
+  console.log({ loading, data });
+
   return (
     <div className="container h-100">
       <div className="d-flex h-100 flex-column justify-content-center align-items-center">
