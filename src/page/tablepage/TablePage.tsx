@@ -65,13 +65,13 @@ export default function TablePage() {
   const FormSearch = (
     <div className="row">
       <div className="col-12 col-md-6 col-lg-3">
-        <input type="text" className="form-control" placeholder="Enter text..." />
+        <input type="text" className="form-control" placeholder="Enter firstname..." />
       </div>
       <div className="col-12 col-md-6 col-lg-3">
-        <input type="text" className="form-control" placeholder="Enter text..." />
+        <input type="text" className="form-control" placeholder="Enter lastname..." />
       </div>
       <div className="col-12 col-md-6 col-lg-3">
-        <input type="text" className="form-control" placeholder="Enter text..." />
+        <input type="text" className="form-control" placeholder="Enter age..." />
       </div>
       <div className="col-12 col-md-6 col-lg-3">
         <div className="btn btn-success">Search</div>
