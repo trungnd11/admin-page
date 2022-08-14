@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@import "./variable";
+@import "./responsive";
+@import "./layout/slideBar";
+@import "./layout/slideInfo";
+@import "./layout/slideItem";
+@import "./layout/navbar";
+@import "./layout/content";

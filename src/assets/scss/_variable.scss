@@ -1,0 +1,16 @@
+$main-color: #d9bf77;
+$gray: #b9b7b7;
+$gray-white: #b9b7b736;
+$blue: #3366CC;
+$white: #fff;
+$black: #000;
+$red: #cc0000;
+$green: #41af5f;
+
+@mixin Transitions($x...) {
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}

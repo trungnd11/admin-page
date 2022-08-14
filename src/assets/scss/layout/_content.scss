@@ -1,0 +1,10 @@
+.content-container {
+  width: 80%;
+  float: right;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 5rem);
+  justify-content: space-between;
+
+}

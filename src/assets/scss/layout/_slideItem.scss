@@ -1,0 +1,68 @@
+.slide-item {
+  margin-top: 2rem;
+  overflow: hidden;
+  .parents {
+    list-style-type: none;
+
+    .item {
+      position: relative;
+      display: block;
+      padding: 1.5rem 0 .3rem 0;
+      border-bottom: 1px solid $gray;
+      cursor: pointer;
+      @include Transitions(.6s);
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+        &::after {
+          width: 100%;
+          background-color: $green !important;
+        }
+
+        li, i {
+          color: $green;
+        }
+      }
+      
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: $white;
+        bottom: 0;
+        @include Transitions(.6s);
+      }
+
+      li {
+        color: $white;
+        position: relative;
+      }
+    }
+
+    a.active {
+      border-bottom: 1px solid $green;
+      li, i {
+        color: $green !important;
+        font-weight: 600;
+      }
+    }
+
+    .btn-arrow {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .childs {
+      padding-left: 1rem;
+      padding-top: 1rem;
+
+      .child-item {
+        border-bottom: 1px solid transparent;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
