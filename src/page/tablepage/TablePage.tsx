@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import Alert from "../../components/commom/alert/AlertContainer";
-import TableContainer from "../../components/commom/table/TableContainer";
+import TableContainer, { ColumnType } from "../../components/commom/table/TableContainer";
 import { data } from "./makeData";
 
 export default function TablePage() {
-  const columns = useMemo(
+  const columns: ColumnType[] = useMemo(
     () => [
       {
         Header: "Name",
@@ -86,7 +86,7 @@ export default function TablePage() {
         data={data}
         bgHeader="success"
         striped
-        page={20}
+        page={5}
         onChangePage={(page: any) => Alert("success", "Page " + page)}> 
         {FormSearch}
       </TableContainer>

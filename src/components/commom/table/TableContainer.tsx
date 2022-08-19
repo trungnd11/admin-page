@@ -4,7 +4,7 @@ import ReactPaginate from "react-paginate";
 import { useTable } from "react-table";
 import { TableStyle } from "../table/StyledTable";
 
-interface ColumnType {
+export interface ColumnType {
   Header: string;
   accessor?: string;
   Cell?: any;
